@@ -5,10 +5,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { HttpClient } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
+import { InserzioneComponent } from './inserzione/inserzione.component';
 
 const routes: Routes = [
   {path:'login', component: LoginComponent},
-  {path:'register', component: RegisterComponent}
+  {path:'register', component: RegisterComponent},
+  {path:'inserzione',component:InserzioneComponent},
 ];
 
 @NgModule({

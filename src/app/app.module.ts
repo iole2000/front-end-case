@@ -11,12 +11,14 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
 import { AuthService } from './auth/auth.service';
 import { NavbarComponent } from './navbar/navbar.component';
+import { InserzioneComponent } from './inserzione/inserzione.component';
 @NgModule({
   declarations: [
   LoginComponent,
   RegisterComponent,
   AppComponent,
-  NavbarComponent
+  NavbarComponent,
+  InserzioneComponent
        
   ],
   imports: [
