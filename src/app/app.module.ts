@@ -8,10 +8,13 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { RegisterComponent } from './register/register.component';
+import { AuthService } from './auth/auth.service';
 @NgModule({
   declarations: [
-    LoginComponent,
-    AppComponent,
+  LoginComponent,
+  RegisterComponent,
+  AppComponent
        
   ],
   imports: [
@@ -19,11 +22,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     RouterModule,
     BrowserModule,
     AppRoutingModule,
-    AppRoutingModule,
-
-HttpClientModule
+    HttpClientModule
   ],
-  providers: [
+  providers: [AuthService,
     provideClientHydration(),
   ],
   bootstrap: [AppComponent]
