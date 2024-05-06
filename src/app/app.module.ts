@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { ServerModule } from '@angular/platform-server';
+
 
 import {  AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,11 +10,13 @@ import { LoginComponent } from './login/login.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
 import { AuthService } from './auth/auth.service';
+import { NavbarComponent } from './navbar/navbar.component';
 @NgModule({
   declarations: [
   LoginComponent,
   RegisterComponent,
-  AppComponent
+  AppComponent,
+  NavbarComponent
        
   ],
   imports: [
